@@ -66,7 +66,7 @@
 
       <div class="hero__headline">
         <h1>A New Model for Skin Health</h1>
-        <p>High Performance Easywear — powered by AMBR Complex<span>TM</span></p>
+        <p>High Performance Easywear — powered by AMBR Complex<span>™</span></p>
       </div>
 
       <div class="hero__meta">
@@ -88,7 +88,7 @@
             </p>
 			
             <p>
-            The skin is an intelligent and self-regulating living system. It’s physiology defines its outer form. 
+            The skin is an intelligent and self-regulating living system. Its physiology defines its outer form. 
             </p>
 			
             <p>
@@ -96,7 +96,7 @@
             </p>
             
 			<p> 
-				Our patent pending AMBR Complex™ is designed to rebalance the microbiome, barrier and repair response. Skin becomes self-optimising, resilient and adaptable. For peak function and form.
+				Our patent pending AMBR Complex<span>™</span> is designed to rebalance the microbiome, barrier and repair response. Skin becomes self-optimising, resilient and adaptable. For peak function and form.
 		   </p>
 		   
 		    <p> 
@@ -133,7 +133,7 @@
 
           <div class="product__copy">
             <h2>Hydrating Performance Serum</h2>
-            <div class="sub">with AMBR Complex™</div>
+            <div class="sub">with AMBR Complex<span>™</span></div>
 
             <p>
               A powerful yet sensitive hydrating performance serum engineered to visibly improve the skin’s appearance.
@@ -165,7 +165,7 @@
             <div class="label">Performance ingredients</div>
             <div class="twoCol">
               <ul class="ingredientList">
-                <li>AMBR Complex™</li>
+                <li>AMBR Complex<span>™</span></li>
                 <li>Bioretinoid alternative</li>
                 <li>Peptides</li>
                 <li>Vitamin C</li>
@@ -252,8 +252,12 @@
               Proven by international independent clinical trials.
             </div>
 			
-            <div class="copyright">© <span id="year"></span> Bon Elliot</div>
+			 <div class="nail">
+				 
+				 <div class="instagram"><a href="https://www.instagram.com/bonelliot" target="_blank">Instagram</a></div>
 			
+            	 <div class="copyright">© <span id="year"></span>&nbspBon Elliot</div>
+			</div>
           </div>
 		  
         </div>
@@ -273,145 +277,145 @@
 	
   </main>
   
-  <script>
-    (function () {
-      const REQUIRED_PASSWORD = "bonelliot"; // change this
-      const STORAGE_KEY = "bonelliot_access_granted";
+    <script>
+      (function () {
+        const REQUIRED_PASSWORD = "bonelliot"; // change this
+        const STORAGE_KEY = "bonelliot_access_granted";
 
-      const gate = document.getElementById("gate");
-      const form = document.getElementById("gateForm");
-      const input = document.getElementById("gatePassword");
-      const error = document.getElementById("gateError");
+        const gate = document.getElementById("gate");
+        const form = document.getElementById("gateForm");
+        const input = document.getElementById("gatePassword");
+        const error = document.getElementById("gateError");
 
-      function lockScroll() {
-        document.body.classList.add("is-locked");
-      }
+        function lockScroll() {
+          document.body.classList.add("is-locked");
+        }
 
-      function unlockScroll() {
-        document.body.classList.remove("is-locked");
-      }
+        function unlockScroll() {
+          document.body.classList.remove("is-locked");
+        }
 
-      // Initial state
-      if (localStorage.getItem(STORAGE_KEY) === "true") {
-        gate.setAttribute("aria-hidden", "true");
-        unlockScroll();
-        return;
-      } else {
-        lockScroll();
-      }
-
-      // Focus input on load
-      setTimeout(() => input?.focus(), 50);
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        error.textContent = "";
-
-        if (input.value.trim() === REQUIRED_PASSWORD) {
-          localStorage.setItem(STORAGE_KEY, "true");
+        // Initial state
+        if (localStorage.getItem(STORAGE_KEY) === "true") {
           gate.setAttribute("aria-hidden", "true");
           unlockScroll();
+          return;
         } else {
-          error.textContent = "Incorrect password.";
-          input.value = "";
-          input.focus();
+          lockScroll();
         }
-      });
-    })();
-  </script>
+
+        // Focus input on load
+        setTimeout(() => input?.focus(), 50);
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          error.textContent = "";
+
+          if (input.value.trim() === REQUIRED_PASSWORD) {
+            localStorage.setItem(STORAGE_KEY, "true");
+            gate.setAttribute("aria-hidden", "true");
+            unlockScroll();
+          } else {
+            error.textContent = "Incorrect password.";
+            input.value = "";
+            input.focus();
+          }
+        });
+      })();
+    </script>
   
 
-  <script>
-    // ===== Auto carousel (every 2 seconds) =====
-    (function () {
-      const root = document.getElementById('productCarousel');
-      if (!root) return;
+    <script>
+      // ===== Auto carousel (every 2 seconds) =====
+      (function () {
+        const root = document.getElementById('productCarousel');
+        if (!root) return;
 
-      const slides = Array.from(root.querySelectorAll('img'));
-      if (slides.length <= 1) return;
+        const slides = Array.from(root.querySelectorAll('img'));
+        if (slides.length <= 1) return;
 
-      let i = 0;
-      setInterval(() => {
-        slides[i].classList.remove('is-active');
-        i = (i + 1) % slides.length;
-        slides[i].classList.add('is-active');
-      }, 2000);
-    })();
+        let i = 0;
+        setInterval(() => {
+          slides[i].classList.remove('is-active');
+          i = (i + 1) % slides.length;
+          slides[i].classList.add('is-active');
+        }, 2000);
+      })();
 
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 	
-<script>
-  const openLink = document.querySelector('.link');
-  const modal = document.getElementById('ingredientsModal');
+  <script>
+    const openLink = document.querySelector('.link');
+    const modal = document.getElementById('ingredientsModal');
 
-  function openModal() {
-    modal.classList.add('is-open');
-    modal.setAttribute('aria-hidden', 'false');
-  }
-
-  function closeModal() {
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-  }
-
-  openLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal();
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target.dataset.close !== undefined) closeModal();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-  });
-</script>
-  
-<script>
-  // --- Klaviyo list subscribe (client-side form post) ---
-  // Find these in Klaviyo:
-  // - "Public API Key / Site ID" (sometimes called public token)
-  // - List ID (the list you want to add subscribers to)
-  const KLAVIYO_PUBLIC_TOKEN = "TefECp";
-  const LIST_ID = "T2gpGK";
-
-  const form = document.getElementById("klaviyoSignup");
-  const msg = document.getElementById("signupMsg");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    msg.textContent = "Submitting…";
-
-    const email = document.getElementById("email").value.trim();
-
-    // Klaviyo endpoint commonly used for custom forms
-    const url = "https://manage.kmail-lists.com/ajax/subscriptions/subscribe";
-
-    const fd = new FormData();
-    fd.append("g", LIST_ID);                  // list ID
-    fd.append("$fields", "email");            // fields you’re sending
-    fd.append("email", email);
-    fd.append("source", "Website signup");    // optional
-    fd.append("a", KLAVIYO_PUBLIC_TOKEN);     // public token / account identifier
-
-    try {
-      const res = await fetch(url, { method: "POST", body: fd });
-      const data = await res.json();
-
-      // Klaviyo returns a JSON object with a success flag/message
-      if (data.success) {
-        msg.textContent = "Thanks — you’re on the list.";
-        form.reset();
-      } else {
-        msg.textContent = data.message || "Couldn’t subscribe. Please try again.";
-      }
-    } catch (err) {
-      msg.textContent = "Network error. Please try again.";
+    function openModal() {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
     }
-  });
-</script>
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    openLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target.dataset.close !== undefined) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+  
+  <script>
+    // --- Klaviyo list subscribe (client-side form post) ---
+    // Find these in Klaviyo:
+    // - "Public API Key / Site ID" (sometimes called public token)
+    // - List ID (the list you want to add subscribers to)
+    const KLAVIYO_PUBLIC_TOKEN = "TefECp";
+    const LIST_ID = "T2gpGK";
+
+    const form = document.getElementById("klaviyoSignup");
+    const msg = document.getElementById("signupMsg");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      msg.textContent = "Submitting…";
+
+      const email = document.getElementById("email").value.trim();
+
+      // Klaviyo endpoint commonly used for custom forms
+      const url = "https://manage.kmail-lists.com/ajax/subscriptions/subscribe";
+
+      const fd = new FormData();
+      fd.append("g", LIST_ID);                  // list ID
+      fd.append("$fields", "email");            // fields you’re sending
+      fd.append("email", email);
+      fd.append("source", "Website signup");    // optional
+      fd.append("a", KLAVIYO_PUBLIC_TOKEN);     // public token / account identifier
+
+      try {
+        const res = await fetch(url, { method: "POST", body: fd });
+        const data = await res.json();
+
+        // Klaviyo returns a JSON object with a success flag/message
+        if (data.success) {
+          msg.textContent = "Thanks — you’re on the list.";
+          form.reset();
+        } else {
+          msg.textContent = data.message || "Couldn’t subscribe. Please try again.";
+        }
+      } catch (err) {
+        msg.textContent = "Network error. Please try again.";
+      }
+    });
+  </script>
 
 
   
