@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bon Elliot — Skin Health</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+ 
+</head>
+
+
+<body>
+   
+	<!-- Password Gate Overlay -->
+	<div class="gate" id="gate" aria-hidden="false">
+        
+	  <div class="gate__backdrop"></div>
+     
+     <div class="gate-logo">
+       <img src="assets/BonElliotLockup.svg" alt="Bon Elliot — Skin Health">
+     </div>
+	  
+	  <div class="gate__panel" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+		  
+		  
+	    <h2 id="gateTitle" class="gate__title">Enter password for access</h2>
+
+	    <form class="gate__form" id="gateForm">
+	      <label class="sr-only" for="gatePassword">Enter password</label>
+	      <input
+	        id="gatePassword"
+	        type="password"
+	        placeholder="Password"
+	        autocomplete="current-password"
+	        required
+	      />
+	      <button type="submit">Enter</button>
+	    </form>
+
+	    <div class="gate__error" id="gateError" aria-live="polite"></div>
+	  </div>
+	</div>
+	
+  <!-- HERO (100% viewport height + background video) -->
+  <header class="hero">
+	 <div class="mini-window">
+	 </div>
+	 
+	
+    <!-- Replace the src with your real video file(s). Keep muted+playsinline for autoplay on mobile. -->
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="">
+      <source src="assets/hero.mp4" type="video/mp4" />
+      <source src="assets/hero.webm" type="video/webm" />
+    </video>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__shelf" aria-hidden="true"></div>
+
+    <div class="wrap hero__content">
+      <div class="hero__brand">
+        <img src="assets/BonElliotLockup.svg" alt="Bon Elliot — Skin Health">
+      </div>
+
+      <div class="hero__headline">
+        <h1>A New Model for Skin Health</h1>
+        <p>High Performance Easywear — powered by AMBR Complex<span>TM</span></p>
+      </div>
+
+      <div class="hero__meta">
+        <div>Dermatologist Founded</div>
+        <div>Made in Sydney, Australia</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro strip -->
+    <section class="intro">
+      <div class="wrap">
+        <div class="intro__grid">
+          <div class="intro_copy">
+			  
+            <p>
+			  Form follows function.
+            </p>
+			
+            <p>
+            The skin is an intelligent and self-regulating living system. It’s physiology defines its outer form. 
+            </p>
+			
+            <p>
+			  Exposure to sun, pollution, stress and harsh cosmetics cause dysregulation of the skin’s natural health networks, resulting in increasingly damaged and sensitive skin.
+            </p>
+            
+			<p> 
+				Our patent pending AMBR Complex™ is designed to rebalance the microbiome, barrier and repair response. Skin becomes self-optimising, resilient and adaptable. For peak function and form.
+		   </p>
+		   
+		    <p> 
+			  A new model for skin health.
+		    </p>
+          </div>
+		  
+		  <div class="intro_logo">
+	     	 	<video class="" autoplay muted loop playsinline preload="metadata" poster="">
+	       			<source src="assets/BELOGOBlack_1.mp4" type="video/mp4" />
+	       			<source src="assets/BELOGOBlack_1.webm" type="video/webm" />
+	     		</video>
+	 		</div>
+        </div>
+
+        <div class="dividerLabel">INTRODUCING OUR PRELIMINARY RELEASE</div>
+      </div>
+    </section>
+
+    <!-- Product section (carousel + copy) -->
+    <section class="product">
+      <div class="wrap">
+        <div class="product__grid">
+          <div class="frame" aria-label="Product image carousel">
+            <div class="carousel" id="productCarousel">
+              <!-- Replace these with your real product images -->
+              <img class="is-active" src="assets/Carousel1.jpg" alt="Hydrating Performance Serum" />
+              <img src="assets/Carousel2.jpg" alt="Hydrating Performance Serum alternate view" />
+              <img src="assets/Carousel3.jpg" alt="Hydrating Performance Serum packaging" />
+			  <img src="assets/Carousel4.jpg" alt="Hydrating Performance Serum packaging" />
+			  <img src="assets/Carousel5.jpg" alt="Hydrating Performance Serum packaging" />
+            </div>
+          </div>
+
+          <div class="product__copy">
+            <h2>Hydrating Performance Serum</h2>
+            <div class="sub">with AMBR Complex™</div>
+
+            <p>
+              A powerful yet sensitive hydrating performance serum engineered to visibly improve the skin’s appearance.
+            </p>
+            <p>
+              With new bioretinoid alternative, intelligent peptides and proven actives for multitasking high luminosity,
+              even skin tone and elasticity. Silky lightweight moisturising feel.
+            </p>
+            <p>Dermatologist created for all skin types and sensitive skin.</p>
+
+            <div class="label">Key benefits</div>
+            <div class="pills" aria-label="Key benefits">
+              <span class="pill">Luminosity</span>
+              <span class="pill">Skin tone</span>
+              <span class="pill">Elasticity</span>
+              <span class="pill">Hydration</span>
+              <span class="pill">Texture</span>
+            </div>
+
+            <div class="label">User results</div>
+            <ul class="list">
+              <li><b>87%</b> keeps my skin luminous throughout the day</li>
+              <li><b>87%</b> improves the appearance of uneven skin tone</li>
+              <li><b>94%</b> increases firmness and elasticity of my skin</li>
+              <li><b>97%</b> keeps my skin hydrated throughout the day</li>
+              <li><b>97%</b> improves the texture of my skin, feels smoother and softer</li>
+            </ul>
+
+            <div class="label">Performance ingredients</div>
+            <div class="twoCol">
+              <ul class="ingredientList">
+                <li>AMBR Complex™</li>
+                <li>Bioretinoid alternative</li>
+                <li>Peptides</li>
+                <li>Vitamin C</li>
+              </ul>
+              <ul class="ingredientList">
+                <li>Niacinamide</li>
+                <li>Hyaluronic acid</li>
+                <li>Hexylresorcinol</li>
+              </ul>
+            </div>
+
+            <a class="link" href="#">
+              Full Ingredients List
+              <span aria-hidden="true">+</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!-- Ingredients Modal -->
+	<div class="modal" id="ingredientsModal" aria-hidden="true">
+	  <div class="modal__backdrop" data-close></div>
+
+	  <div class="modal__panel" role="dialog" aria-modal="true">
+	    <button class="modal__close" data-close aria-label="Close">×</button>
+
+	    <h3>Bon Elliot Hydrating Performance Serum</h3>
+	    <p>Aqua, Niacinamide, Glycerin, Squalane, Ascorbyl Glucoside, Arachidyl Alcohol, Glyceryl Stearate Citrate, Hexylresorcinol, Ectoin, Panthenol, Caprylic/Capric Triglyceride, Potassium Cetyl Phosphate, Ethoxydiglycol, Palmitoyl SH-Hexapeptide-11 SP Amide, Palmitoyl SH-Hexapeptide-19 SP Amide, Lactobacillus Ferment Lysate, Taraxacum Officinale Leaf Extract, Chlorella Vulgaris Extract, Sodium Hyaluronate, Ceramide NP, Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Serine, Tocopheryl Acetate, Tocopherol, Dipotassium Glycyrrhizate, Pullulan, Jojoba Esters, Algin, Lactic Acid/Glycolic Acid Copolymer, Lactic Acid, Helianthus Annuus Seed Oil, Butyrospermum Parkii Butter, Aloe Barbadensis Leaf Juice Powder, Ethylhexylglycerin, Urea, Behenyl Alcohol, Carbomer, Isododecane, Phenoxyethanol, Dehydroacetic Acid, Arachidyl Glucoside, Trehalose, Propanediol, Butylene Glycol, Sodium Lauroyl Lactylate, Glyceryl Stearate, Cetyl Alcohol, Stearyl Alcohol, 1,2-Hexanediol, Benzyl Alcohol, Pentylene Glycol, Sodium Stearoyl Glutamate, Aminomethyl Propanol, Xanthan Gum, Glucose, Lecithin, Polyvinyl Alcohol, Glyceryl Polyacrylate, Caprylyl Glycol, Polysilicone-11, Disodium Phosphate, Polyglyceryl-3, Potassium Phosphate, Glyceryl Caprylate, Phenylpropanol.</p>
+	  </div>
+	</div>
+	
+
+    <!-- Bottom strip -->
+    <section class="bottom">
+      <div class="wrap">
+        <div class="bottom__grid">
+         
+            <!-- Large BE mark left (like the screenshot) -->
+           <div class="bottom_logo">
+	 	     <video class="bottom_logo_video" autoplay muted loop playsinline preload="metadata" poster="">
+	 	       <source src="assets/be_spin.mp4" type="video/mp4" />
+	 	       <source src="assets/be_spin.webm" type="video/webm" />
+	 	     </video>
+		   </div>
+	
+           <div class="email-signup">
+            
+			<div class="email-headline">
+              <h3>Available for purchase<br/>exclusively in Australia <br/>March 2026</h3>
+            </div>
+			
+		
+
+		  	<div class="email-form">
+				 <form class="signup" id="klaviyoSignup">
+		     <label class="sr-only" for="email">Email address</label>
+		     <input
+		      type="email"
+		      id="email"
+		      name="email"
+		      placeholder="Sign up for first access"
+		      required
+		      />
+		     <button type="submit" value="submit" aria-label="Submit email">↗</button>
+			
+	    	</form>
+			<div id="signupMsg" style="margin-top:10px;font-size:12px;color:rgba(15,15,16,.7)"></div>
+			  </div>
+       
+		  
+		  </div>
+		  
+          <div class="fineprint-holder">
+         
+		    <div class="fineprint">
+              Bon Elliot occupies a unique space at the intersection of skin health science and new luxury — where efficacy
+              and experience are unified and equally uncompromised.
+              <br/><br/>
+              <b>Dermatologist created</b> by Dr. Bonnie Fergie. Grounded in research.
+              <br/>
+              Tested with Next Generation gene sequencing technology.
+              <br/>
+              Proven by international independent clinical trials.
+            </div>
+			
+            <div class="copyright">© <span id="year"></span> Bon Elliot</div>
+			
+          </div>
+		  
+        </div>
+      </div>
+    </section>
+	
+    <section class="toe">
+      <div class="wrap">
+   	   <div class="toeLogo">
+	     <video class="toeLogoVideo" autoplay muted loop playsinline preload="metadata" poster="">
+	       <source src="assets/be_spin.mp4" type="video/mp4" />
+	       <source src="assets/be_spin.webm" type="video/webm" />
+	     </video>
+   		</div>
+	      </div>
+	</section>
+	
+  </main>
+  
+  <script>
+    (function () {
+      const REQUIRED_PASSWORD = "bonelliot"; // change this
+      const STORAGE_KEY = "bonelliot_access_granted";
+
+      const gate = document.getElementById("gate");
+      const form = document.getElementById("gateForm");
+      const input = document.getElementById("gatePassword");
+      const error = document.getElementById("gateError");
+
+      function lockScroll() {
+        document.body.classList.add("is-locked");
+      }
+
+      function unlockScroll() {
+        document.body.classList.remove("is-locked");
+      }
+
+      // Initial state
+      if (localStorage.getItem(STORAGE_KEY) === "true") {
+        gate.setAttribute("aria-hidden", "true");
+        unlockScroll();
+        return;
+      } else {
+        lockScroll();
+      }
+
+      // Focus input on load
+      setTimeout(() => input?.focus(), 50);
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        error.textContent = "";
+
+        if (input.value.trim() === REQUIRED_PASSWORD) {
+          localStorage.setItem(STORAGE_KEY, "true");
+          gate.setAttribute("aria-hidden", "true");
+          unlockScroll();
+        } else {
+          error.textContent = "Incorrect password.";
+          input.value = "";
+          input.focus();
+        }
+      });
+    })();
+  </script>
+  
+
+  <script>
+    // ===== Auto carousel (every 2 seconds) =====
+    (function () {
+      const root = document.getElementById('productCarousel');
+      if (!root) return;
+
+      const slides = Array.from(root.querySelectorAll('img'));
+      if (slides.length <= 1) return;
+
+      let i = 0;
+      setInterval(() => {
+        slides[i].classList.remove('is-active');
+        i = (i + 1) % slides.length;
+        slides[i].classList.add('is-active');
+      }, 2000);
+    })();
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+	
+<script>
+  const openLink = document.querySelector('.link');
+  const modal = document.getElementById('ingredientsModal');
+
+  function openModal() {
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  openLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target.dataset.close !== undefined) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+  
+<script>
+  // --- Klaviyo list subscribe (client-side form post) ---
+  // Find these in Klaviyo:
+  // - "Public API Key / Site ID" (sometimes called public token)
+  // - List ID (the list you want to add subscribers to)
+  const KLAVIYO_PUBLIC_TOKEN = "TefECp";
+  const LIST_ID = "T2gpGK";
+
+  const form = document.getElementById("klaviyoSignup");
+  const msg = document.getElementById("signupMsg");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    msg.textContent = "Submitting…";
+
+    const email = document.getElementById("email").value.trim();
+
+    // Klaviyo endpoint commonly used for custom forms
+    const url = "https://manage.kmail-lists.com/ajax/subscriptions/subscribe";
+
+    const fd = new FormData();
+    fd.append("g", LIST_ID);                  // list ID
+    fd.append("$fields", "email");            // fields you’re sending
+    fd.append("email", email);
+    fd.append("source", "Website signup");    // optional
+    fd.append("a", KLAVIYO_PUBLIC_TOKEN);     // public token / account identifier
+
+    try {
+      const res = await fetch(url, { method: "POST", body: fd });
+      const data = await res.json();
+
+      // Klaviyo returns a JSON object with a success flag/message
+      if (data.success) {
+        msg.textContent = "Thanks — you’re on the list.";
+        form.reset();
+      } else {
+        msg.textContent = data.message || "Couldn’t subscribe. Please try again.";
+      }
+    } catch (err) {
+      msg.textContent = "Network error. Please try again.";
+    }
+  });
+</script>
+
+
+  
+</body>
+</html>
+
+
