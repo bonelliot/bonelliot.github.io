@@ -148,9 +148,7 @@
   
   .hero__headline p span {
 	font-family: 'helvetica_neue_lt_com43LtEx';
-	letter-spacing:1px;
-	font-size:5px;
-	vertical-align:top;
+	-webkit-text-stroke: 0.4px white;
   }
 
   .hero__meta {
@@ -164,6 +162,36 @@
 	gap:3px;
   }
 
+
+  .intro_copy p span {
+	font-family: 'helvetica_neue_lt_com43LtEx';
+	letter-spacing:1px;
+	-webkit-text-stroke: 0.4px black;
+  }
+  
+  .sub span {
+	font-family: 'helvetica_neue_lt_com43LtEx';
+	letter-spacing:1px;
+	-webkit-text-stroke: 0.4px black;
+  }
+  
+  .ingredientList span {
+  	font-family: 'helvetica_neue_lt_com43LtEx';
+  	letter-spacing:1px;
+  	-webkit-text-stroke: 0.4px black;
+  }
+
+@media (max-width: 768px) {
+  .hero__headline h1 {
+    width:300px;
+  }
+}
+
+@media (max-width: 414px) {
+  .hero {
+	  height:95vh;
+  }
+}
 
   /* =============================
     WHITE INTRO STRIP
@@ -187,7 +215,9 @@
   
   .intro_logo {
 	  grid-area:logo;
-	  padding:0px 20px;
+	 max-width:172px;
+
+  margin: 0 auto;
   }
 
   .intro p {
@@ -207,11 +237,22 @@
     text-align: center;
     margin-top: 150px;
 	font-family: 'helvetica_neue_lt_com43LtEx';
-	-webkit-text-stroke: 0.5px #000;
-    font-size: 9px;
+	-webkit-text-stroke: 0.75px #000;
+    font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000;
+  }
+  
+
+  @media (max-width: 1240px) {
+	
+	  
+	  .intro_logo {
+		  width:240px;
+		  margin: 0 auto;
+		  
+	  }
   }
 
 
@@ -231,8 +272,6 @@
 		  
 	  }
 	  
-	 
-	
     .beMark { margin-left: 0; }
   }
 
@@ -294,12 +333,12 @@
    }	
 
   .product__copy h2 {
-	font-family: 'supreme_lllight';
-	-webkit-text-stroke: 0.1px #000;
-    margin: 0;
-    font-size: 22px;
-    line-height: 1.18;
-	letter-spacing:1.25px;
+  	font-family: 'supreme_llthin';
+  	-webkit-text-stroke: 0.4px #000;
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.4;
+  	letter-spacing:1.25px;
   }
 
   .product__copy .sub {
@@ -317,8 +356,8 @@
   .label {
     margin-top: 40px;
 	font-family: 'helvetica_neue_lt_com43LtEx';
-	-webkit-text-stroke: 0.5px #000;
-    font-size: 9px;
+	-webkit-text-stroke: 0.75px #000;
+    font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000;
@@ -371,10 +410,22 @@
 	  
 	  .product__copy p {
 	    max-width: none;
-		font-size: 11px;
+		font-size: 12px;
 	  }
 	  .list {	   
-	    font-size: 11px;
+	    font-size: 12px;
+	  }
+	  .intro p {
+	  		    font-size: 12px;
+	  }
+	  
+	  .product__copy .sub {
+	    margin-top: 2px;
+	    font-size: 12px;
+	  }
+	  
+	  .ingredientList {
+	  	 font-size: 12px;
 	  }
 
 	  
@@ -450,17 +501,17 @@
 
   .email-signup h3 {
     margin: 0;
-	font-family: 'supreme_lllight';
-	-webkit-text-stroke: 0.1px #000;
+	font-family: 'supreme_llthin';
+	-webkit-text-stroke: 0.3px #000;
     margin: 0;
     font-size: 22px;
-    line-height: 1.18;
+    line-height: 1.4;
 	letter-spacing:1.25px;
   }
 
   .email-form {
   	  align-items:end;
-	  padding-top:60px;
+	  padding-top:50px;
   }
   
   .success {
@@ -516,8 +567,27 @@
 
   .fineprint b { color: rgba(15,15,16,.9); font-weight: var(--medium); }
 
+  .nail {
+    margin-top: 30px;
+    color: #000;
+    font-size: 12px;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 28px;
+  }
+  
+  .instagram a {
+	  border-bottom:1px solid black;
+  }
+  
+  .instagram a:hover {
+  	   color: #333;
+  }
+  
   .copyright {
-    margin-top: 18px;
+	  justify-content: right;
+	      display: flex;
     color: #000;
     font-size: 12px;
     line-height: 1.6;
