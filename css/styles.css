@@ -91,6 +91,15 @@
 
   @media (max-width: 768px) {
 	  .mini-window-container {
+		  visibility:hidden;
+	  }
+	  
+
+  }
+  
+  /*
+  @media (max-width: 768px) {
+	  .mini-window-container {
 		  width:100%;
 		    margin: 0 auto;
 			position:absolute;
@@ -116,9 +125,7 @@
 		  padding-left:-10px;
 	  }
 	  
-	  .hero__content {
-	    padding-bottom: 90px!important;
-	  }
+	
   }
   
   @media (max-width: 430px) {
@@ -151,7 +158,7 @@
 	  }	 
   }
   
-  
+  */
 
   /* =============================
     HERO
