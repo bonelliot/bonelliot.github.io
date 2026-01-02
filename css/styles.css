@@ -315,6 +315,10 @@
   .hero {
 	  height:89vh;
   }
+  .hero__brand img {
+
+    height: 32px;
+  }
 }
 
 
@@ -532,6 +536,15 @@ VIDEO 2
     .beMark { margin-left: 0; }
   }
   
+  
+  @media (max-width: 600px) {
+	  .dividerLabel {
+	    text-align: center;
+		width:320px;
+		margin:0 auto;
+		margin-top:120px;
+	  }
+  }
   
 
   /* =============================
@@ -1099,10 +1112,9 @@ VIDEO 2
 .modal__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.25);
+  background: rgba(0,0,0,.50);
   opacity: 0;
   transition: opacity 220ms cubic-bezier(.2,.8,.2,1);
-  backdrop-filter: blur(40px);
 }
 
 .modal.is-open .modal__backdrop {
@@ -1118,7 +1130,7 @@ VIDEO 2
   width:460px;
   background: #fff;
   color: 000;
-  padding: 32px 32px 36px;
+  padding: 30px;
   overflow-y:auto;
   /* start off-screen */
   transform: translate(100%, 0);
@@ -1171,6 +1183,7 @@ font-family: 'supreme_llregular';
 	/* Bottom sheet panel */
 	.modal__panel {
 	  width:375px;
+	  
 	} 
 }
 
@@ -1178,6 +1191,7 @@ font-family: 'supreme_llregular';
 	/* Bottom sheet panel */
 	.modal__panel {
 	  width:100%;
+	  padding:30px 20px;
 	} 
 }
 
