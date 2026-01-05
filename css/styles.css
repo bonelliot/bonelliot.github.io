@@ -379,6 +379,7 @@ VIDEO 2
 		  grid-template-rows: auto 1fr; /* top + flexible center */
 		  z-index:2;
 		  pointer-events:none;
+  		  mix-blend-mode: difference;
       }
 	  .overlay__top{
 	    display:flex;
