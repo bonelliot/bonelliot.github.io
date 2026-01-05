@@ -384,7 +384,7 @@ VIDEO 2
 	  .overlay__top{
 	    display:flex;
 	    justify-content:center;
-	    padding-top: clamp(24px, 4vw, 48px);
+	    padding-top: clamp(40px, 4vw, 48px);
 	  }
 	  
 	  .overlay__center{
