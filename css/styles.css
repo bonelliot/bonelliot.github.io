@@ -360,12 +360,12 @@ VIDEO 2
         transform: scale(1.02); /* hides edge seams */
       }
 
-      /* Optional darkening / vignette for readability 
+      /* Optional darkening / vignette for readability */
       .videoCard::after{
         content:"";
         position:absolute;
         inset:0;
-       /*  background:
+       /* background:
           radial-gradient(900px 420px at 50% 45%, rgba(0,0,0,.25), rgba(0,0,0,.62) 70%),
           linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.60));*/
         pointer-events:none;
