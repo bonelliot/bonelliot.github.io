@@ -244,6 +244,25 @@
 			 <li>Elasticity significantly increased by <b>+14.3%</b><br/>Instrumentation: Cutometer®MPA58 </li>
 			 <li>Tone (visible spots) significantly decreased by <b>-10.1%</b><br/>Instrumentation: Visia-CRP-5 Primos</li>
             </ul>
+			
+			<div class="label">SAFETY TESTING</div>
+            <ul class="clinicalsList">
+              <li>Human Repeat Insult Patch Test<br/>
+				  Protocol No.: CP-01.01S<br/>
+				  56 subject panel, Fitzpatrick I-VI</li>
+             <li>Ocular Safety Test <br/>
+				 MatTek In Vitro EpiocularTM Eye Irritation Test <br/>
+				 OCL-200-EIT OECD 492</li>
+			 <li>Stability Testing<br/>
+				 Monthly: T0 - 6 months<br/>
+				 pH, appearance, odour, colour
+			 </li>
+			 <li>Preservative Efficacy Testing<br/>
+				 USP51 - Category 2<br/>
+				 T0, T14, T28 days</li>
+            </ul>
+			
+			
 	  </div>
 	</div>
 
@@ -366,7 +385,10 @@
 	            <div class="fineprint-holder-mobile">
         
 	  		    <div class="fineprint_1_mobile">
-			
+				 
+	   			 <div class="label">INTRODUCING BON ELLIOT</div><br/>
+	  			  Founded by leading Australian dermatologist Dr Bonnie Fergie alongside a family-based team working across Sydney and New York, Bon Elliot brings a future-facing lens to skincare, occupying a unique space at the intersection of dermatology and new luxury.
+	  			  <br/><br/>
 		 
 	   			 <div class="label">A NOTE FROM BON</div><br/>
 	  			  As a dermatologist, I commonly see damaged and sensitive skin being addressed by cosmetic treatments without reference to the skin’s physiology, responsible for so much of what we see and feel. 
@@ -377,6 +399,8 @@
 	   <br/><br/>
 	  			  Dr Bonnie Fergie<br/>
 	  			  Sydney, 2026
+				  
+				   <div class="label"><a href="#" class="link" data-modal="#brandModal">Behind the brand<span aria-hidden="true">+</span></a></div>
              
 	  			 </div>
 				 </div>
@@ -426,7 +450,9 @@
           <div class="fineprint-holder">
          
 		    <div class="fineprint_1">
-				
+  			 <div class="label">INTRODUCING BON ELLIOT</div><br/>
+ 			  Founded by leading Australian dermatologist Dr Bonnie Fergie alongside a family-based team working across Sydney and New York, Bon Elliot brings a future-facing lens to skincare, occupying a unique space at the intersection of dermatology and new luxury.
+ 			  <br/><br/>
 			 
  			 <div class="label">A NOTE FROM BON</div><br/>
 			  As a dermatologist, I commonly see damaged and sensitive skin being addressed by cosmetic treatments without reference to the skin’s physiology, responsible for so much of what we see and feel. 
@@ -437,17 +463,15 @@
  <br/><br/>
 			  Dr Bonnie Fergie<br/>
 			  Sydney, 2026
+			  
+			  <div class="label"><a href="#" class="link" data-modal="#brandModal">Behind the brand<span aria-hidden="true">+</span></a></div>
+			  
+			  <!-- Lightbox Modal -->
+			 
               
 			 </div>
 			
-			<!-- 
-			 <div class="nail">
-				 
-				
-			
-            	 <div class="copyright">© <span id="year"></span>&nbspBon Elliot</div>
-			</div>
-			-->
+		
           </div>
 		  
         </div>
@@ -462,6 +486,43 @@
    		</div>
 	      </div>
 	</section>
+	
+  <div class="lb" id="brandModal" aria-hidden="true">
+    <div class="lb__backdrop" data-close></div>
+
+    <div class="lb__panel" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+     
+
+      <div class="lb__inner">
+		 <button class="lb__close" type="button" data-close aria-label="Close">×</button>  
+       
+
+        <div class="lb__body">
+		  <div class="lb__kicker" id="lbTitle">BEHIND THE BRAND</div>
+          <p>
+		   Bon Elliot’s origins are in Australia, with a distinctly global perspective. The brand shares the name of Bonnie and our family-based team of Australian co-founders, working across Sydney and New York.
+<br/><br/>
+		   “I was fortunate to enter specialist dermatology training early in my medical career and have had the privilege of helping tens of thousands of patients with skin impacted by Australia’s unforgiving conditions.” says Bonnie.
+<br/><br/>
+		   “As I reflected on the common experience of skin becoming increasingly damaged and sensitive over time, I began to search for a path that maximised outer form by prioritising the daily and long-term health of the skin, rooted in the science of the skin’s physiology.”
+<br/><br/>
+		   “What started over 5 years ago has culminated in AMBR Complex™, our patent pending complex to rebalance the skin’s natural health networks — at the foundation of our formulas” says Bonnie of her research, recently selected for presentation at the Women’s Dermatologic Society in Texas this April. 
+<br/><br/>
+		   “Our formulas are proudly made in Sydney, benefiting from Australia’s clean manufacturing environment and rigorous standards, while being proven with leading international independent laboratory clinical trials and testing in Europe and the United States.”
+<br/><br/>
+		   The brand carries the DNA of our family co-founders behind award-winning New York based creative studio Little Troop, known for its culturally resonant and forward-looking design.
+<br/><br/>
+		   Co-founder and creative director Noemie Le Coz, recently inducted into the prestigious Alliance Graphique Internationale, says “As with our formulas, the visual identity of Bon Elliot lies in the skin’s physiology and future-facing lens to skincare that is at the heart of our brand.”
+<br/><br/>
+		   “The unique visual elements of Bon Elliot are a reflection of the depth of our science and craftsmanship of our product, while bearing all the hallmarks of new luxury.”
+<br/><br/>
+		   “Finally, our Australian origins are core to who we are and we wanted that to be true in every aspect. Our launch campaign, inspired by ‘Skin health under the microscope’, was shot in New York with all Australian talent, and accomplished Sydney-born set designer Alicia Sciberras. While the brand has been designed from two opposite sides of the globe, I was proud to be able to bring an incredible team of Australians together for our launch campaign”.
+           
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 	
   </main>
   
@@ -582,17 +643,25 @@
 
 	    // Close: click backdrop / X
 	    document.addEventListener("click", (e) => {
+		  const isBackdrop = e.target.matches(".modal__backdrop, .lb__backdrop");
 	      const closeBtn = e.target.closest("[data-close]");
 	      if (!closeBtn) return;
 
-	      const modal = e.target.closest(".modal");
-	      closeModal(modal);
+	      const modal = e.target.closest(".modal, .lb");
+		  if (!modal) return; // safety
+		  closeModal(modal);
 	    });
 
 	    // Close: ESC key closes whichever is open
 	    document.addEventListener("keydown", (e) => {
 	      if (e.key === "Escape" && openModalEl) closeModal(openModalEl);
 	    });
+		
+		document.addEventListener("click", (e) => {
+		  if (e.target.classList.contains("lb__backdrop")) {
+		    console.log("Backdrop clicked ✅");
+		  }
+		});
 	  })();
 	</script>
 	
