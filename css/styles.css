@@ -852,6 +852,20 @@ VIDEO 2
   /* =============================
     FOOTER STRIP
   ==============================*/
+  
+  .intro-desktop {
+      color: #000;
+      font-size: 12px;
+      line-height: 1.5;
+      max-width: 80ch;
+      text-wrap: pretty;	
+	  margin-bottom:-141px;
+  }
+  
+  .intro-desktop p {
+	  margin-top:20px;
+  }
+  
   .bottom {
     background: #fff;
     padding: 150px 0 40px;
@@ -953,6 +967,7 @@ VIDEO 2
     font-size: 12px;
     line-height: 1.5;
     max-width: 70ch;
+	text-wrap: pretty;
   }
 
   .fineprint b { color: rgba(15,15,16,.9); font-weight: var(--medium); }
@@ -1010,6 +1025,11 @@ VIDEO 2
 	      font-size: 20px;
 	    }
 		
+	    .intro-desktop {
+	        max-width: 70ch;
+	    }
+  
+		
   } 
   
   @media (max-width: 1024px) {
@@ -1018,7 +1038,19 @@ VIDEO 2
       font-size: 18px;
     }
 	
+    .intro-desktop {
+        max-width: 60ch;
+		margin-bottom: -156px;
+    }
+	
 } 
+
+ @media (max-width: 800px) { 
+     .intro-desktop {
+         max-width: 50ch;
+ 		margin-bottom: -176px;
+     }
+ }
   
   @media (max-width: 768px) { 
 	  
@@ -1058,6 +1090,9 @@ VIDEO 2
   	margin: 0;
   	visibility:visible;
   	display:block;
+    }
+    .intro-desktop {
+        display:none;
     }
   	 
    }
@@ -1487,7 +1522,7 @@ body.is-locked {
 	    height:100vh;
 	  }
 	  .lb__body {
-		  padding:0px 10px 120px 20px;
+		  padding:0px 20px 10px 20px;
 		  
 	  }	
   }
