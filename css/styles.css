@@ -1460,7 +1460,11 @@ body.is-locked {
     font-size: 28px;
     line-height: 1;
   }
-
+	
+ a.modal_link {
+    border-bottom:1px solid #000;	
+  }	
+  
   .lb__close:hover{
     color: rgba(15,15,16,.9);
   }
