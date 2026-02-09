@@ -702,7 +702,7 @@ VIDEO 2
     list-style: none;
     display: grid;
     gap: 3px;
-    font-size: 12px;
+    font-size: 11px;
     color: #000;
   }
   .clinicalsList li {margin-bottom:15px;line-height:1.35;}
