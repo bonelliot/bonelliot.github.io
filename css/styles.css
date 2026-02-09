@@ -915,7 +915,7 @@ VIDEO 2
 
   .email-form {
   	  align-items:end;
-	  padding-top:18px;
+	  padding-top:48px;
   }
   
   .success {
@@ -1041,20 +1041,36 @@ VIDEO 2
 	        max-width: 70ch;
 			margin-bottom: -176px;
 	    }
-  
+  	  
+	
 		
   } 
+  
+  @media (max-width: 1100px) {
+  
+	
+  
+	  
+	.email-form {
+		padding-top:30px;
+	}
+	
+} 
   
   @media (max-width: 1024px) {
    
     .email-signup h3 {
-      font-size: 18px;
+      font-size: 16px;
     }
 	
     .intro-desktop {
         max-width: 60ch;
 		margin-bottom: -188px;
     }
+	
+	.email-form {
+		padding-top:20px;
+	}
 	
 } 
 
